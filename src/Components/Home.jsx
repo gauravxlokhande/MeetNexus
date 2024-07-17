@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Styles/Home.scss'
 import { useUser } from '../Context/UserCredentials';
 import { useNavigate } from 'react-router-dom';
@@ -7,8 +7,18 @@ import { useNavigate } from 'react-router-dom';
 export default function Home() {
     const { user } = useUser();
 
-    const HandleJoinMeet = () => {
+    const [MeetId, setMeetId] = useState('');
 
+    let navigate = useNavigate();
+
+
+    const HandleJoinMeet = () => {
+        navigate(`/Meet/${MeetId}`);
+    }
+    const HandleNewMeet = () => {
+
+        // make a function for random id and pass in meetId
+        navigate(`/Meet/${MeetId}`);
     }
 
     return (
@@ -19,8 +29,8 @@ export default function Home() {
                 <p className='subheading'>Connect, collaborate, and celebrate from anywhere with <span>MeetNexus</span></p>
 
                 <div className='newmeet-joinmeet'>
-                    <button>New Meeting</button>
-                    <input placeholder='Enter a Code or Link' type="text" />
+                    <button onClick={HandleNewMeet}>New Meeting</button>
+                    <input onChange={(e) => setMeetId(e.target.value)} placeholder='Enter a Code or Link' type="text" />
                     <button onClick={HandleJoinMeet} >Join Meet</button>
                 </div>
 
