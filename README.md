@@ -5,6 +5,14 @@ MeetNexus is a web application for hosting and joining video call meetings. User
 ![Screenshot 2024-07-18 122658](https://github.com/user-attachments/assets/fae1eee9-9b8e-4e3e-ac76-381fa459dd0c)
 
 
+### Zegocloud website
+```
+https://console.zegocloud.com
+```
+### documentation
+```
+https://www.zegocloud.com/docs/uikit/callkit-web/quick-start/using-npm-package-manager
+```
 ## Table of Contents
 
 - [Features](#features)
