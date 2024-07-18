@@ -2,6 +2,8 @@
 
 MeetNexus is a web application for hosting and joining video call meetings. Users can host their meetings by logging into MeetNexus and share meeting links for others to join. This project is built using React.js, HTML, CSS, JavaScript, Sass, and integrates video call functionality using Zogocloud.
 
+![Screenshot 2024-07-18 122959](https://github.com/user-attachments/assets/2f1f42ed-5c05-4bf1-95a2-2f14169d025a)
+
 ## Table of Contents
 
 - [Features](#features)
