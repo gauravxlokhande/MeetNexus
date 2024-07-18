@@ -17,11 +17,11 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
         setUser({ name, password });
-        if (name === 'Gaurav Lokhande' && password === 'Pass@123') {
+        if (name !== ' ' && password !== ' ') {
             navigate('/Home')
-            // setname(' ');
-            // setPassword(' ');
-        } else if (email === '' || password === '') {
+            setname(' ');
+            setPassword(' ');
+        } else if (name === '' || password === '') {
             toast.error('Cannot login! Empty Credentials.');
         } else {
             toast.error('Wrong Credentials, Please provide correct credentials to login!');
@@ -32,7 +32,7 @@ function Login() {
     return (
         <div className='main-login'>
             <h1>MeetNexus</h1>
-            <input onChange={(e) => setname(e.target.value)} value={name} placeholder='gaurravlokhande@gmail.com' type="email" />
+            <input onChange={(e) => setname(e.target.value)} value={name} placeholder='Gaurav Lokhande' type="text" />
             <input onChange={(e) => setPassword(e.target.value)} value={password} placeholder='Pass@123' type="password" />
             <button onClick={handleLogin}>Login</button>
             <Toaster />
