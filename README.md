@@ -10,7 +10,6 @@ MeetNexus is a web application for hosting and joining video call meetings. User
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -44,7 +43,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/meetnexus.git
+    git clone https://github.com/gauravxlokhande/meetnexus.git
     ```
 
 2. Navigate to the project directory:
@@ -59,19 +58,20 @@ Before you begin, ensure you have met the following requirements:
     npm install
     ```
 
-4. Create a `.env` file in the root directory and add your Zogocloud API keys:
+4. Replace your Zogocloud API keys In Meet.jsx:
 
     ```sh
-    REACT_APP_ZOGOCLOUD_API_KEY=your_zogocloud_api_key
+   const appID = 1828215307;
+   const serverSecret = "adf03c2edb7f07f2b4305e443b103f7c";
     ```
 
 5. Start the development server:
 
     ```sh
-    npm start
+    npm run dev
     ```
 
-6. Open your browser and navigate to `http://localhost:3000`.
+6. Open your browser and navigate to your localhost `http://localhost:3000`.
 
 ## Usage
 
@@ -79,22 +79,11 @@ Before you begin, ensure you have met the following requirements:
 2. **Host a Meeting**: After logging in, users can host a meeting and get a unique meeting link.
 3. **Join a Meeting**: Users can join a meeting by pasting the meeting link in the join meeting section.
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature-name`).
-6. Create a Pull Request.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact us at [your-email@example.com].
+If you have any questions or suggestions, feel free to contact me at [gaurravlokhande@gmail.com].
 
