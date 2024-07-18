@@ -27,12 +27,13 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
         setUser({ name, password });
-        if (name !== ' ' && password !== ' ') {
+        if (name.trim() != '' || password.trim() != '') {
             navigate('/Home')
             setname(' ');
             setPassword(' ');
-        } else if (name === '' || password === '') {
+        } else if (name.trim() === '' || password.trim() === '') {
             toast.error('Cannot login! Empty Credentials.');
+            return;
         } else {
             toast.error('Wrong Credentials, Please provide correct credentials to login!');
         }

@@ -43,7 +43,7 @@ function Meet() {
                 sharedLinks: [
                     {
                         name: 'Personal link',
-                        url: `http://localhost:5173/Meet/${MeetId}`,
+                        url: `${MeetId}`,
                     },
                 ],
                 scenario: {
