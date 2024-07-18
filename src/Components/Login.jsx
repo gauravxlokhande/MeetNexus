@@ -1,3 +1,13 @@
+/*
+  Developed By: Gaurav Lokhande
+  Email: gaurravlokhande@gmail.com
+  Linkedin: https://www.linkedin.com/in/gauravlokhande
+  Github: https://github.com/gauravxlokhande
+  Trailhead: https://www.salesforce.com/trailblazer/gauravlokhande
+  Instagram: gauravxlokhande
+   */
+
+
 import '../Styles/Login.scss'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
